@@ -15,6 +15,13 @@ func main() {
 空间复杂度：
 时间复杂度：O(logN)
 是否稳定：
+公式:
+qsort(elems) {
+	for head<trip {swap(head+1,trip)}
+    qsort(elems[:head])
+    qsort(elems[head+1:])
+
+}
 */
 
 func Sort(elems []int) {
